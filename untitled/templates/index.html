@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+<!-- 		<p>{{ num }}</p>
+		<p>{{ name }}</p>
+		<p>{{ namelist.2 }}</p>
+		<p>{{ d1.age }}</p>
+		<p>{{ demo.kind }}</p>
+		<p>{{ demo.eat }}</p>
+		<p>{{namelist|length}}</p>
+		<p>{{xy|default:'NNNNONE'}}</p>
+		<p>{{maxsize|filesizeformat}}</p>
+		<p>{{name|slice:'0:2'}}</p>
+		<p>{{time_now|date:'Y-m-d'}}</p>
+		<p>{{words|truncatechars:'9'}}</p>
+		<p>{{words|truncatewords:'3'}}</p>
+		<p>{{words|cut:'a'}}</p>
+		<p>{{words|join:'__'}}</p>
+		<p>{{namelist|join:'++'}}</p>
+		<p>{{tag|safe}}</p> -->
+
+		<ul>
+<!-- 			{% for key,value in d1.items %}
+			{{forloop.counter}}
+			{{forloop.counter0}}
+			{{forloop.revcounter}}
+			{{forloop.revcounter0}}
+			{{forloop.first}}
+			{{forloop.last}}
+				<li>{{key}}---{{value}}</li>
+			{% endfor %} -->
+<!-- 			{% for dd2 in d2 %}
+					{% for j in dd2 %}
+						<li>{{j}}</li>
+					{% endfor %}
+			{% endfor %} -->
+<!-- 			{% for foo in d3 %}
+				<li>{{foo}}</li>
+				{% empty %}
+				<li>nnnnnnn</li>
+			{% endfor %} -->
+<!-- 			{% for key,value in d1.items %}
+				{% if forloop.last %}
+					{% for i in value %}
+						<li>{{i}}</li>
+					{% endfor %}
+				{% else %}
+					<li>{{key}}=={{value}}</li>
+				{% endif %}
+			{% endfor %} -->
+			{% with total=namelist.1 %}
+				{{total}}
+			{% endwith %}
+			
+			{% with namelist.1 as t %}
+				{{t}}
+			{% endwith %}
+		</ul>
+	</body>
+</html>
